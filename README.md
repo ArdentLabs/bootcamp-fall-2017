@@ -20,5 +20,5 @@ Week | Topic             | Description
 6    | Deployment        | Prepare your code for deployment. Submit it to the Google Play Store or Apple's App Store.
 7    | Presentations     | Present what you've made. Every team will have 30 minutes to present with a slide show and demonstration.
 
- > **Disclaimer**: Know that *only Macs can develop for iOS*. This means that in order to create an iPhone or iPad app, you *absolutely-without-a-doubt need a Mac*. If you are unable to acquire a Mac device, please let one of the instructors know so we can accommodate one if needed.
+ > **Disclaimer**: *Only Macs can develop for iOS.* This means that in order to create an iPhone or iPad app, you **absolutely-without-a-doubt need a Mac**. If you are unable to acquire a Mac device, please let one of the instructors know so we can accommodate one if needed.
 
