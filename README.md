@@ -7,18 +7,19 @@ Welcome to `A04`, App Development Bootcamp. By the end of this 7 week camp, you 
 
 Let's make something awesome :tada:
 
-Schedule
-========
-Week | Topic             | Description
----- | ----------------- | -----------------------------------------------------------------------------------------------------------------
-0    | Starting Line     | Prepare your development machine for the trials ahead. Get started learning by reading the resources provided.
-1    | Hello World       | Introduce the class. Establish channels of communication and coordination. Learn the basics of React development.
-2    | Going Native      | Take React and bring it to your iOS or Android phone. Get the code compiled and running on your very own phone.
-3    | Projects          | Start your very own project. Get your Github repositories setup, teams coordinated, and project plans.
-4    | Working with APIs | Communicate with real-world APIs using web protocols. Discover which API best fits your interests.
-5    | Code Reviews      | Instructors will take this week to perform code reviews and provide guidance if needed.
-6    | Deployment        | Prepare your code for deployment. Submit it to the Google Play Store or Apple's App Store.
-7    | Presentations     | Present what you've made. Every team will have 30 minutes to present with a slide show and demonstration.
+Weekly Schedule
+===============
+Week | Topic             | Description                                                                                                       | Optional Topic
+---- | ----------------- | ----------------------------------------------------------------------------------------------------------------- | ---------------------
+0    | Starting Line     | Prepare your development machine for the trials ahead. Get started learning by reading the resources provided.    | None
+1    | Hello World       | Introduce the class. Establish channels of communication and coordination. Learn the basics of React development. | None
+2    | Going Native      | Take React and bring it to your iOS or Android phone. Get the code compiled and running on your very own phone.   | None
+3    | Working with APIs | Communicate with real-world APIs using web protocols. Discover which API best fits your interests. Brainstorm.    | Microsoft Emotion API
+4    | Projects          | Start your very own project. Get your Github repositories setup, teams coordinated, and project plans.            | TensorFlow
+5    | Code Reviews      | Instructors will take this week to perform code reviews and provide guidance if needed.                           | Google Earth API
+6    | Deployment        | Prepare your code for deployment. Submit it to the Google Play Store or Apple's App Store. Load it on your phone. | IBM Watson
+7    | Presentations     | Present what you've made. Every team will have 15 minutes to present with a slide show and demonstration.         | None
+
+Code reviews will take place at the end of every class for 45 minutes. On select classes, you can opt-out of your code review to join an instructor as he introduces a new technology. You can view these technologies under the `Optional Topic` column of the Weekly Schedule.
 
  > **Disclaimer**: *Only Macs can develop for iOS.* This means that in order to create an iPhone or iPad app, you **absolutely-without-a-doubt need a Mac**. If you are unable to acquire a Mac device, please let one of the instructors know so we can accommodate one if needed.
-
