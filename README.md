@@ -5,7 +5,9 @@ Developer Bootcamp :rocket:
 
 Welcome to `A04`, App Development Bootcamp. By the end of this 8 week camp, you will be able to build your own iOS/Android application using the same technology that Facebook is using to develop their own applications. Not only will we provide you with the knowledge necessary for app development, but also some best practices that will ensure *beautiful* code. Our goal as instructors is to introduce you into the world of development in a manner that will foster your growth as potential software developers.
 
-Let's make something awesome :tada:
+This will be a considerably rigorous course; learning the material yourself will be necessary. You will be expected to spend *at least* 10 hours a week of coding, outside of class. This includes reading documentation, working on your app, and communicating via the services that will be presented to you during Week 1. Every week will containing several links to resources that will aid with the development of your application; take advantage of these. If you need any additional help or have any questions, send an email to one of your instructors or go to office hours.
+
+Now let's make something awesome :tada:
 
 Weekly Schedule
 ===============
