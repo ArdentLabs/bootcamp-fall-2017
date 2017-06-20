@@ -11,7 +11,7 @@ Weekly Schedule
 ===============
 Week | Topic              | Description                                                                                                               | Optional Topic
 ---- | ------------------ | ------------------------------------------------------------------------------------------------------------------------- | -------------------
-   0 | [Starting Line](1) | Prepare your development machine for the trials ahead. Get started learning by reading the resources provided.            | None
+   0 | [Starting Line][1] | Prepare your development machine for the trials ahead. Get started learning by reading the resources provided.            | None
    1 | Hello World        | Introduce the class. Establish channels of communication and coordination. Learn the basics of React development.         | None
    2 | Going Native       | Take React and bring it to your iOS or Android phone. Get the code compiled and running on your very own phone.           | None
    3 | Node.js & APIs     | Communicate with real-world APIs using web protocols. Discover which API best fits your interests. Introduce the backend. | Facial Recognition
