@@ -5,8 +5,9 @@ Week 0 - Starting Line :dash:
 
 Throughout the length of the bootcamp, we will be using several services. You will need to make an account for each of these services to fully participate in all development activities.
  1. [GitHub](https://github.com/join)
- 2. [Slack](https://slack.com/): Send your email to [sam.balana@ardentacademy.com](mailto:sam.balana@ardentacademy.com) to receive an invite.
- 3. [Trello](https://trello.com/signup)
+ 2. [Trello](https://trello.com/signup)
+
+Send an email to [sam.balana@ardentacademy.com] with your Github and Trello usernames.
 
 Here are some resources for the upcoming topics that we'll be diving into. Read them in order.
  1. [Try Git](https://try.github.io)

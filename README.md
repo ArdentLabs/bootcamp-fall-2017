@@ -16,9 +16,10 @@ Week | Topic              | Description                                         
    2 | Going Native       | Take React and bring it to your iOS or Android phone. Get the code compiled and running on your very own phone.           | None
    3 | Node.js & APIs     | Communicate with real-world APIs using web protocols. Discover which API best fits your interests. Introduce the backend. | Facial Recognition
    4 | Project            | Start your very own project. Get your Github repositories setup, teams coordinated, and project plans.                    | Machine Learning
-   5 | Code Reviews       | Instructors will take this week to perform code reviews and provide guidance if needed.                                   | Geospatial Analysis
-   6 | Deployment         | Prepare your code for deployment. Submit it to the Google Play Store or Apple's App Store. Load it on your phone.         | Speech Recognition
-   7 | Presentations      | Present what you've made. Every team will have 15 minutes to present with a slide show and demonstration.                 | None
+   5 | Code Reviews       | Instructors will take this entire week to perform code reviews and provide guidance if needed.                            | Geospatial Analysis
+   6 | Office hours       | Talk with an instructor about your project to gain insight on your project.                                               | Text Analysis
+   7 | Deployment         | Prepare your code for deployment. Submit it to the Google Play Store or Apple's App Store. Load it on your phone.         | Speech Recognition
+   8 | Presentations      | Present what you've made. Every team will have 15 minutes to present with a slide show and demonstration.                 | None
 
 Code reviews will take place at the end of every class for 45 minutes. On select classes, you can opt-out of your code review to join an instructor as he introduces a new technology. You can view these technologies under the `Optional Topic` column of the Weekly Schedule.
 
