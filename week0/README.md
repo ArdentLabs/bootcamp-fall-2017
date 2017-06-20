@@ -14,4 +14,4 @@ Here are some resources for the upcoming topics that we'll be diving into. Read 
  3. [ES6 for Humans](https://github.com/metagrover/ES6-for-humans) - Pay special attention to Arrow Functions and Classes
  4. [React - Tutorial](https://facebook.github.io/react/tutorial/tutorial.html)
  5. [React Native - Tutorial](https://facebook.github.io/react-native/docs/tutorial.html)
- 6. [React Native - Getting Started](https://facebook.github.io/react-native/releases/next/docs/getting-started.html)
+ 6. [React Native - Building Projects with Native Code](https://facebook.github.io/react-native/releases/next/docs/getting-started.html) - Read the *"Building Projects with Native Code"* section, **not** the "Quick Start" section.
