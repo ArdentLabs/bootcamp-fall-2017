@@ -14,7 +14,7 @@ Weekly Schedule
 Week | Topic              | Description                                                                                                               | Optional Topic
 ---- | ------------------ | ------------------------------------------------------------------------------------------------------------------------- | -------------------
    0 | [Starting Line][1] | Prepare your development machine for the trials ahead. Get started learning by reading the resources provided.            | None
-   1 | Hello World        | Introduce the class. Establish channels of communication and coordination. Learn the basics of React development.         | None
+   1 | [Hello World][2]   | Introduce the class. Establish channels of communication and coordination. Learn the basics of React development.         | None
    2 | Going Native       | Take React and bring it to your iOS or Android phone. Get the code compiled and running on your very own phone.           | None
    3 | Node.js & APIs     | Communicate with real-world APIs using web protocols. Discover which API best fits your interests. Introduce the backend. | Facial Recognition
    4 | Project            | Start your very own project. Get your Github repositories setup, teams coordinated, and project plans.                    | Machine Learning
@@ -28,3 +28,4 @@ Code reviews will take place at the end of every class for 45 minutes. On select
  > **Disclaimer**: *Only Macs can develop for iOS.* This means that in order to create an iPhone or iPad app, you **absolutely-without-a-doubt need a Mac**. If you are unable to acquire a Mac device, please let one of the instructors know so we can accommodate one if needed.
 
 [1]: https://github.com/ArdentLabs/bootcamp/tree/master/week0
+[2]: https://github.com/ArdentLabs/bootcamp/tree/master/week1
