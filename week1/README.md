@@ -71,12 +71,15 @@ pull    | Get the latest commits
 
 The difference between Git and Github always confuses people at first. So I'll set it straight. You don't need GitHub to use Git. In no way does Git rely on Github, nor is it the official website for Git. GitHub is simply a **hosting service for Git repositories**. There are other hosting services for Git, such as [Bitbucket](https://bitbucket.org/) and [GitLab](https://gitlab.com/), but we're only going to be using GitHub since it's the most popular (but not always the best!)
 
+We will be using GitHub to host the *central repository* for your project, where all of your team members will *push* to and *pull* from.
+
 
 ### Interactive Git demonstration
  > View the repository for the in-class demo on [GitHub](https://github.com/ArdentLabs/try-git)
 
 
-### Git flow
+### Git flow (... or how about not?)
+ > `TODO (Sam): Determine whether or not you will introduce this level of complexity so early on. It might not even be necessary.`
  > http://nvie.com/posts/a-successful-git-branching-model/
 
 Once you've understood the basics of Git, now it's time we get a little fancy with it.
