@@ -49,21 +49,53 @@ The most popular version control system of today is **Git**. As most of the tool
  - Git works on the idea of a **repository**, a collection of code.
  - All changes to the code are encapsulated in a **commit**, which consists of a list of what you've changed and a description.
  - Collaborators can **pull** the repo to get the latest commits and **push** to upload any new commits they have made.
+ - Git has a *branching model*, which allows you to diverge from the main line of development and continue to do work without messing with that main line by making a different **branch**.
 
-Git is designed to be *decentralized*; each user has their own local copy of the full version history. This allows you to decide who's repository you want to work with, allowing you to decide your **central repository**. Compare this with centralized version control systems (such as `svn`) that have a single, enforced central repository, whereas the version history is stored in a server-side repository.
+Git is designed to be *decentralized*; each user has their own local copy of the full version history. This allows you to decide who's repository you want to work with, allowing you to decide your *central repository*. This is commonly known as the **origin**. Compare this with centralized version control systems (such as `svn`) that have a single, enforced central repository, whereas the version history is stored in a server-side repository.
 
  > Read more about how Git is decentralized in [this StackExchange question](https://softwareengineering.stackexchange.com/questions/315252/why-does-everyone-use-git-in-a-centralized-manner) (optional)
 
-There's more to be learned, as `git` is a pretty complex command, but here are some basic commands that you'll need to know to get started.
+Here are some basic commands that'll get you started.
 
-Command | Description
-------- | -----------
-init    | Create a new repository (creates the `.git` directory)
-status  | View the `diff` status of the repository
-add     | Stage a file to be committed
-commit  | Annotate the changes to the staged files **(BE DESCRIPTIVE)**
-push    | Upload your commits for others
-pull    | Get the latest commits
+Command  | Description
+-------- | -----------
+init     | Create a new repository (creates the `.git` directory)
+status   | View the `diff` status of the repository
+add      | Stage a file to be committed
+commit   | Annotate the changes to the staged files **(BE DESCRIPTIVE)**
+push     | Upload commits to *origin*
+pull     | Get the latest commits
+checkout | Change which branch you're in
+
+ > Full documentation can be found on the [Reference](https://git-scm.com/docs).
+
+##### Example
+```bash
+  # Create a new directory
+  mkdir test-app
+  cd test-app
+
+  # Make a file with some text in it
+  echo Hello World > README.md
+
+  # Create a repo
+  git init
+
+  # Set the origin
+  git remote add origin https://github.com/user/repo.git
+
+  # Add the file
+  git add README.md
+
+  # Commit the file, this will open up a text editor
+  git commit
+
+  # ... (Make a DESCRIPTIVE commit message)
+
+  # Push to the master branch on the origin server
+  git push origin master
+
+```
 
 
 ### GitHub
