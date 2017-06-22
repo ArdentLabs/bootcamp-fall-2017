@@ -51,6 +51,7 @@ The most popular version control system of today is **Git**. As most of the tool
  - Collaborators can **pull** the repo to get the latest commits and **push** to upload any new commits they have made.
 
 Git has a *branching model*, which allows you to diverge from the main line of development and continue to do work without messing with that main line by making a different **branch**. As you can imagine, this is helpful for making experimental, breaking changes while keeping a *version* of your code that still works. By convention, we use the *master* branch to store the *stable*, working version of our code. We also use a *develop* branch for all the new, untested changes.
+ > This specific branching model is called [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/)
 
 <img
   alt="Branches visualized"
@@ -85,32 +86,31 @@ merge    | Merge changes between branches
 
  > Full documentation can be found on the [Reference](https://git-scm.com/docs).
 
-##### Example
+#### Quick Example
 ```bash
-  # Create a new directory
-  mkdir test-app
-  cd test-app
+# Create a new directory
+mkdir test-app
+cd test-app
 
-  # Make a file with some text in it
-  echo Hello World > README.md
+# Make a file with some text in it
+echo Hello World > README.md
 
-  # Create a repo
-  git init
+# Create a repo
+git init
 
-  # Set the origin
-  git remote add origin https://github.com/user/repo.git
+# Set the origin
+git remote add origin https://github.com/user/repo.git
 
-  # Add the file
-  git add README.md
+# Add the file
+git add README.md
 
-  # Commit the file, this will open up a text editor
-  git commit
+# Commit the file, this will open up a text editor
+git commit
 
-  # ... (Make a DESCRIPTIVE commit message)
+# ... (Make a DESCRIPTIVE commit message)
 
-  # Push to the master branch on the origin server
-  git push origin master
-
+# Push to the master branch on the origin server
+git push origin master
 ```
 
 
@@ -126,14 +126,6 @@ We will be using GitHub to host the *central repository* for your project, where
  > View the repository for the in-class demo on [GitHub](https://github.com/ArdentLabs/try-git)
 
 
-### Git flow (... or how about not?)
- > `TODO (Sam): Determine whether or not you will introduce this level of complexity so early on. It might not even be necessary.`
- > http://nvie.com/posts/a-successful-git-branching-model/
-
-Once you've understood the basics of Git, now it's time we get a little fancy with it.
-
-
 ## Component design
-
 
 
