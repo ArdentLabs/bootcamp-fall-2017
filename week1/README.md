@@ -49,11 +49,16 @@ The most popular version control system of today is **Git**. As most of the tool
  - Git works on the idea of a **repository**, a collection of code.
  - All changes to the code are encapsulated in a **commit**, which consists of a list of what you've changed and a description.
  - Collaborators can **pull** the repo to get the latest commits and **push** to upload any new commits they have made.
- - Git has a *branching model*, which allows you to diverge from the main line of development and continue to do work without messing with that main line by making a different **branch**.
 
-Git is designed to be *decentralized*; each user has their own local copy of the full version history. This allows you to decide who's repository you want to work with, allowing you to decide your *central repository*. This is commonly known as the **origin**. Compare this with centralized version control systems (such as `svn`) that have a single, enforced central repository, whereas the version history is stored in a server-side repository.
+![Branches visualized](https://wac-cdn-a.atlassian.com/dam/jcr:746be214-eb99-462c-9319-04a4d2eeebfa/01.svg?cdnVersion=ey)
 
- > Read more about how Git is decentralized in [this StackExchange question](https://softwareengineering.stackexchange.com/questions/315252/why-does-everyone-use-git-in-a-centralized-manner) (optional)
+Git has a *branching model*, which allows you to diverge from the main line of development and continue to do work without messing with that main line by making a different **branch**. As you can imagine, this is helpful for making experimental, breaking changes while keeping a *version* of your code that still works. By convention, we use the *master* branch to store the *stable*, working version of our code. We also use a *develop* branch for all the new, untested changes.
+
+![Decentralized visualized](http://nvie.com/img/centr-decentr@2x.png)
+
+Git is designed to be *decentralized*; each user has their own local copy of the full version history. This allows you to decide who's repository you want to work with, allowing you to decide your **"remote"** repository. The default remote repository is known as the **origin**. You will most likely see these keywords thrown around when linking a repository to GitHub (more on this later).
+
+> Compare this with centralized version control systems (such as `svn`) that have a single, enforced "remote" repository, whereas each user doesn't have access to the full version history. Read more about how Git is decentralized on [StackExchange](https://softwareengineering.stackexchange.com/questions/315252/why-does-everyone-use-git-in-a-centralized-manner) (optional).
 
 Here are some basic commands that'll get you started.
 
@@ -65,7 +70,14 @@ add      | Stage a file to be committed
 commit   | Annotate the changes to the staged files **(BE DESCRIPTIVE)**
 push     | Upload commits to *origin*
 pull     | Get the latest commits
+
+Here the slightly more advanced commands relating to branching.
+
+Command  | Description
+-------- | -----------
+branch   | List, add, or remove branches
 checkout | Change which branch you're in
+merge    | Merge changes between branches
 
  > Full documentation can be found on the [Reference](https://git-scm.com/docs).
 
