@@ -50,13 +50,17 @@ The most popular version control system of today is **Git**. As most of the tool
  - All changes to the code are encapsulated in a **commit**, which consists of a list of what you've changed and a description.
  - Collaborators can **pull** the repo to get the latest commits and **push** to upload any new commits they have made.
 
-![Branches visualized](https://wac-cdn-a.atlassian.com/dam/jcr:746be214-eb99-462c-9319-04a4d2eeebfa/01.svg?cdnVersion=ey)
-
 Git has a *branching model*, which allows you to diverge from the main line of development and continue to do work without messing with that main line by making a different **branch**. As you can imagine, this is helpful for making experimental, breaking changes while keeping a *version* of your code that still works. By convention, we use the *master* branch to store the *stable*, working version of our code. We also use a *develop* branch for all the new, untested changes.
 
-![Decentralized visualized](http://nvie.com/img/centr-decentr@2x.png)
+<img
+  alt="Branches visualized"
+  src="https://wac-cdn-a.atlassian.com/dam/jcr:746be214-eb99-462c-9319-04a4d2eeebfa/01.svg?cdnVersion=ey"
+  width="600px"
+/>
 
 Git is designed to be *decentralized*; each user has their own local copy of the full version history. This allows you to decide who's repository you want to work with, allowing you to decide your **"remote"** repository. The default remote repository is known as the **origin**. You will most likely see these keywords thrown around when linking a repository to GitHub (more on this later).
+
+![Decentralized visualized](http://nvie.com/img/centr-decentr@2x.png)
 
 > Compare this with centralized version control systems (such as `svn`) that have a single, enforced "remote" repository, whereas each user doesn't have access to the full version history. Read more about how Git is decentralized on [StackExchange](https://softwareengineering.stackexchange.com/questions/315252/why-does-everyone-use-git-in-a-centralized-manner) (optional).
 
