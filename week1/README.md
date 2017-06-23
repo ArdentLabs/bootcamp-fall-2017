@@ -12,7 +12,7 @@ In addition to the amount of work, instructors will be strict on the way you wri
 ## Communication and coordination
  > It is not distance that keeps people apart, but the lack of communication.
 
-Every tool that we will use during this bootcamp are tools that you would use on the job. It's key that you use these tools actively; however, it's crucial to understand how to communicate effectively. You will receive an effective communication evaluation at the end of the course.
+Every tool that we will use during this bootcamp are tools that you would use on the job. It's important that you use these tools actively; however, it's even more important to understand how to communicate effectively with your team and instructors. You will receive an effective communication evaluation at the end of the course.
 
 
 ### Slack
@@ -40,10 +40,10 @@ All of the development tools that we'll be using will be command-line based. Thu
 
 ### Working in the command line
 ```
-$ cowsay "I love the command line"
- _________________________
-< I love the command line >
- -------------------------
+$ cowsay "Learn to use the command line"
+ _______________________________
+< Learn to use the command line >
+ -------------------------------
         \   ^__^
          \  (oo)\_______
             (__)\       )\/\
@@ -57,12 +57,12 @@ Launch a terminal on your local machine and try these commands out.
 
 Command                        | Description
 ------------------------------ | -----------
-ls                             | *List* files in the current directory (on Windows, use `dir` instead)
-cd &lt;DEST&gt;                | *Change* directory
-mkdir &lt;NAME&gt;             | *Make* a new *directory*
-cp &lt;SOURCE&gt; &lt;DEST&gt; | *Copy* a file or directory (use -r for directories)
-rm &lt;FILE&gt;                | *Remove* a file or directory (use -rf for directories)
-mv &lt;SOURCE&gt; &lt;DEST&gt; | *Move* a file or directory
+`ls`                           | *List* files in the current directory (on Windows, use `dir` instead)
+`cd <DEST>`                    | *Change* directory
+`mkdir <NAME>`                 | *Make* a new *directory*
+`cp <SOURCE> <DEST>`           | *Copy* a file or directory (use -r for directories)
+`rm <FILE>`                    | *Remove* a file or directory (use -rf for directories)
+`mv <SOURCE> <DEST>`           | *Move* a file or directory
 
 
 #### Common directories
@@ -75,6 +75,31 @@ Name | Description
 ..   | Previous directory
 ~    | Home directory
 /    | Root directory
+
+
+#### A text editor: Vim
+
+You'll eventually want to edit files from the command line. Vim is one such tool that will allow you to do so, and is the editor of choice for many developers and power users. It's a *modal* text editor: meaning you have multiple *modes* of operation.
+
+Mode   | Description
+------ | ---------------------------------------------------------
+Normal | Move the cursor. This is the default mode.
+Insert | Insert text (this is the only mode on most text editors).
+Visual | Highlight text.
+
+ > Run `vim test.txt` then don't touch anything.
+
+When you first launch `vim`, you'll be in *Normal* mode. It's different than anything you've ever used before, but don't freak out. It's okay. I swear. While you're in Normal mode, you can move the cursor around using the arrow keys; however, you won't be able to insert text yet.
+
+Press `i` to enter *Insert* mode. Now `vim` will begin feel like a normal text editor: you can insert text, move your cursor with the arrow keys, and remove text with backspace. Press Escape on your keyboard (commonly referred to as `<Esc>`) to return back to Normal mode.
+
+So now we want to save file and quit `vim`. That's how most people get stuck. From within Normal mode, you can execute commands by typing semicolon, followed by your command, then pressing Enter (commonly referred to as `<CR>`). For saving the file, type `:w` then press Enter. For exiting `vim`, type `:q` then press Enter.
+
+Normal Mode Command | Description
+------------------- | -----------
+`i`                 | Enter *Insert* mode
+`:w <CR>`           | Write to file
+`:q <CR>`           | Quit `vim`
 
 
 ## Project management
