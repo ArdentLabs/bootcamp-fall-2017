@@ -32,6 +32,51 @@ You will be creating a Trello board for your project, before any code has been c
  > View a sample application board: https://trello.com/b/mXh5WQ9E
 
 
+## Development workflow
+
+All of the development tools that we'll be using will be command-line based. Thus, using the command line will be an integral part of the course. The commands that I'll be going over this week assumes that you're on a Linux or Mac machine. Instructors will be primarily using Mac for development, so it's highly recommended that you acquire a Mac.
+
+ > Note: Windows does things a little differently. For this reason, you might have trouble following along with the notes. Again, I recommend using either Mac or Linux for development. Alternatively, you can have a Linux environment on Windows through the [Bash on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about) project. If you're stuck on Windows and Bash on Windows isn't working out for you, as a last resort, [create a virtual machine that runs Ubuntu](https://linus.nci.nih.gov/bdge/installUbuntu.html).
+
+### Working in the command line
+```
+$ cowsay "I love the command line"
+ _________________________
+< I love the command line >
+ -------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
+#### Common commands
+
+Launch a terminal on your local machine and try these commands out.
+
+Command        | Description
+-------------- | -----------
+ls             | *List* files in the current directory (on Windows, use `dir` instead)
+cd DEST        | *Change* directory
+mkdir NAME     | *Make* a new *directory*
+cp SOURCE DEST | *Copy* a file or directory (use -r for directories)
+rm FILE        | *Remove* a file or directory (use -rf for directories)
+mv SOURCE DEST | *Move* a file or directory
+
+
+#### Common directories
+
+Some directories have special names. Here's the ones you should remember.
+
+Name | Description
+---- | -----------
+.    | Current directory
+..   | Previous directory
+~    | Home directory
+/    | Root directory
+
+
 ## Project management
 
 When your code base begins to grow, you'll find that it'll be harder to keep track of what you've done. It's inevitable. **Version controlling** is one way of cope with your code's **fate to become more complex**. By keeping track of all changes that you've made to your code, you'll be able to *jump* back in time to view your codebase as it was before. This makes it easier to quickly fix mistakes. In addition, you also have the opportunity to comment the changes to the code.
