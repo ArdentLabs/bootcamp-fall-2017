@@ -1,5 +1,5 @@
-Week 1 - Hello World :wave:
-===========================
+Week 1: Hello World :wave:
+==========================
  > `console.log('Hello World');`
 
 ## Course background and goals
@@ -55,14 +55,14 @@ $ cowsay "I love the command line"
 
 Launch a terminal on your local machine and try these commands out.
 
-Command        | Description
--------------- | -----------
-ls             | *List* files in the current directory (on Windows, use `dir` instead)
-cd DEST        | *Change* directory
-mkdir NAME     | *Make* a new *directory*
-cp SOURCE DEST | *Copy* a file or directory (use -r for directories)
-rm FILE        | *Remove* a file or directory (use -rf for directories)
-mv SOURCE DEST | *Move* a file or directory
+Command                        | Description
+------------------------------ | -----------
+ls                             | *List* files in the current directory (on Windows, use `dir` instead)
+cd &lt;DEST&gt;                | *Change* directory
+mkdir &lt;NAME&gt;             | *Make* a new *directory*
+cp &lt;SOURCE&gt; &lt;DEST&gt; | *Copy* a file or directory (use -r for directories)
+rm &lt;FILE&gt;                | *Remove* a file or directory (use -rf for directories)
+mv &lt;SOURCE&gt; &lt;DEST&gt; | *Move* a file or directory
 
 
 #### Common directories
