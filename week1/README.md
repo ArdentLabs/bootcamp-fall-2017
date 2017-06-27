@@ -121,4 +121,53 @@ the hard part out of the way: setting up your development environment and gettin
 the app on your device. Now we can focus on actually writing code!
 
 Here's an overview of the steps we took for setting everything up:
-1. Download [Node.js]()
+1. Download [Node.js](https://nodejs.org/) **v6.11.0**.
+2. If you're on Windows, download [Git](https://git-scm.com/) (Mac already has
+this installed.) Select "Use Git from the Windows Command Prompt" when prompted,
+and leave all other installation settings as their defaults.
+3. Run `npm install --global create-react-native-app yarn`. Use the `--global`
+flag to specify that you're not installing project-specific packages.
+4. Navigate in the command line to where you'd like to place a new project using
+`ls` (`dir` on Windows) and `cd`.
+5. Run `create-react-native-app BirthdayApp`.
+6. Run `cd BirthdayApp`.
+7. Run `yarn upgrade` to make sure everything is up-to-date.
+8. Run `yarn start` to start up the compiler.
+9. Download the Expo Client on your phone.
+10. Make sure you're connected to the same WiFi on your computer and phone.
+11. Scan the QR code on your phone or tablet using the Expo Client.
+12. Open the `App.js` file in your project folder.
+13. Get coding!
+
+After setting up, most of your errors received in class were syntax errors.
+Don't worry if it's confusing at first. We'll go over the syntax of
+JavaScript in class next week. I recommend casually browsing
+[Eloquent JavaScript](https://http://eloquentjavascript.net/) in the
+meantime.
+
+Here are your assignments for the week:
+1. Read the first 5 sections of [React Native Express](https://www.reactnativeexpress.com/).
+2. Add the `DatePicker` component to your BirthdayApp from
+`react-native-datepicker` (if you haven't already) by running `npm install
+--save react-native-datepicker`. This will save `react-native-datetpicker`.
+to your project's dependencies, which can be viewed in `package.json`.
+Instructions can be found on [their GitHub page](https://github.com/xgfe/react-native-datepicker).
+3. Skim the documentation on [JavaScript's Date object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
+4. Change the code of BirthdayApp to do something cool with
+`this.state.date`.
+5. Post a screenshot on the `#bootcamp` channel.
+6. *Optional:* Start an entirely new app called `TodoApp`, which will
+be a simple todo list.
+
+For testing purposes, you can run Javascript in the console by running
+`node`. This will open up an interactive terminal where you can
+experiment with JavaScript's features (such as `Date`).
+
+```
+C:\Users\samba>node
+> const now = new Date()
+undefined
+> now
+2017-06-25T18:47:22.099Z
+<Ctrl-D> to exit
+```
