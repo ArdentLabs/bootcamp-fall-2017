@@ -95,11 +95,11 @@ Launch a terminal on your local machine and try these commands out.
 
 Command                        | Description
 ------------------------------ | -----------
-`ls`                           | *List* files in the current directory (on Windows, use `dir` instead)
+`ls`                           | *List* files in the current directory (on Windows, use `dir`)
 `cd <DEST>`                    | *Change* directory
 `mkdir <NAME>`                 | *Make* a new *directory*
 `cp <SOURCE> <DEST>`           | *Copy* a file or directory (use -r for directories)
-`rm <FILE>`                    | *Remove* a file or directory (use -rf for directories)
+`rm <FILE>`                    | *Remove* a file or directory (use -rf for directories) (on Windows, use `rem`)
 `mv <SOURCE> <DEST>`           | *Move* a file or directory
 
 
