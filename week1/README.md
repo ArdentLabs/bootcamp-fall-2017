@@ -36,7 +36,7 @@ You will be creating a Trello board for your project, before any code has been c
 
 All of the development tools that we'll be using will be command-line based. Thus, using the command line will be an integral part of the course. The commands that I'll be going over this week assumes that you're on a Linux or Mac machine. Instructors will be primarily using Mac for development, so it's highly recommended that you acquire a Mac.
 
- > Note: Windows does things a little differently. For this reason, you might have trouble following along with the notes. Again, I recommend using either Mac or Linux for development. Alternatively, you can have a Linux environment on Windows through the [Bash on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about) project. If you're stuck on Windows and Bash on Windows isn't working out for you, as a last resort, [create a virtual machine that runs Ubuntu](https://linus.nci.nih.gov/bdge/installUbuntu.html).
+ > Note: Windows does things a little differently. For this reason, you might have trouble following along with the notes. Again, I recommend using either Mac or Linux for development. Alternatively, you can have a Linux environment on Windows through the [Bash on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about) project. If Bash on Windows isn't working out for you, as a last resort, [create a virtual machine that runs Ubuntu](https://linus.nci.nih.gov/bdge/installUbuntu.html).
 
 ### Working in the command line
 ```

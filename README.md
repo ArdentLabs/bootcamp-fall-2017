@@ -29,3 +29,21 @@ Code reviews will take place at the end of every class for 45 minutes. On select
 
 [1]: https://github.com/ArdentLabs/bootcamp/tree/master/week0
 [2]: https://github.com/ArdentLabs/bootcamp/tree/master/week1
+
+Accessing the slides
+====================
+Change which week you'd like to view in `index.js`.
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Start up the local server:
+
+```bash
+npm start
+```
+
+Open a browser to [http://localhost:3000](http://localhost:3000).
