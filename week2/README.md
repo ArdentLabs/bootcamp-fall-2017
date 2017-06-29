@@ -25,8 +25,7 @@ booleans, strings, and numbers.
 8
 8.16
 8.332e8
-/* Just like many calculators, we represent 833,200,000 with compact exponential
-form 8.332e8. */
+/* Just like many calculators, we represent 833,200,000 with compact exponential form 8.332e8. */
 ```
 
 **_Strings_** are represented in a similar way to other languages:
@@ -77,13 +76,15 @@ return boolean values, and use the operators listed below.
 Operator | Operation Performed
 -------- | -----------------------
 `==`     | Equality (`5 == 5` returns `true` and `5 == '5'` also returns `true`)
-`===`    | Strict Equality (`5 === 5` returns `true` but `5 === '5'` returns `false`)
 `!=`     | Inequality (`4 != 5` returns `true` but `5 != '5'` returns `false`)
+`===`    | Strict Equality (`5 === 5` returns `true` but `5 === '5'` returns `false`)
 `!==`    | Strict Inequality (`4 !== 5` returns `true` and `5 !== '5'` returns `true`)
 `>`      | Greater Than (`5 > 3` returns `true` but `5 > 5` returns `false`)
 `>=`     | Greater Than or Equal To (`5 >= 3` returns `true` and `5 >= 5` returns `true`)
 `<`      | Less Than (`3 < 7` returns `true` but `7 < 7` returns `false`)
 `<=`     | Less Than or Equal To (`3 <= 7` returns `true` and `7 <= 7` returns `true`)
+
+ > You should always use the *strict* comparison operators, to avoid [unexpected behavior](https://stackoverflow.com/a/359509).
 
 Logical operators determine relationships involving one or two boolean objects.
 They also return boolean values.
@@ -101,7 +102,7 @@ We will be discussing two types of variables in JavaScript: `let` and `const`.
 A `let` should be your default choice if you want to change the value of the
 variable later. Here is an example executed in the console using a `let`:
 ```
-Ardents-iMac:~ ardentlabs$ node
+$ node
 > let myVariable = 'spaghetti and meatballs'
 undefined
 > myVariable
@@ -118,7 +119,7 @@ A `const` variable should be your choice if you wish to never change the value
 you store inside of it. **We encourage the use of `const` variables wherever
 it is possible to do so**. Example:
 ```
-Ardents-iMac:~ ardentlabs$ node
+$ node
 > const cannotChangeThis = 'I want a pony!'
 undefined
 > cannotChangeThis
@@ -130,8 +131,7 @@ TypeError: Assignment to constant variable.
 To be aware of the shortcomings of the `const` variable type, let's see one more
 example:
 ```
-> Ardents-iMac:~ ardentlabs$ clear
-Ardents-iMac:~ ardentlabs$ node
+$ node
 > const shouldNotChange = { favoriteAnimal: 'puppy' }
 undefined
 > shouldNotChange.favoriteAnimal
@@ -146,6 +146,8 @@ an element of the object `shouldNotChange`. This is because we are simply
 modifying one of the children of `shouldNotChange` instead of modifying the
 object itself (objects are discussed in the section below). Be aware of this
 when designing your apps!
+
+#### Scoping
 
 Scoping is another important aspect of variable usage. To reason out why, let's
 ask a simple question: If we create a variable, when is it deleted?
@@ -196,8 +198,9 @@ The simplest object that can be created in JavaScript is `{}`, which is an empty
 object. We can use this syntax to create any object we'd like, such as `{ type:
 'banana', color: 'yellow', texture: 'smooth' }`. We can take this object syntax
 and use the command line to gain a better understanding of how it works:
+
 ```
-Ardents-iMac:~ ardentlabs$ node
+$ node
 > const fruit = { type: 'banana', color: 'yellow', texture: 'smooth' }
 undefined
 > fruit.type
@@ -205,8 +208,10 @@ undefined
 > fruit.color
 'yellow'
 ```
+
 Now, we are passed a new fruit with more than three descriptors (these are
 called keys)
+
 ```
 > const newFruit = {
 >   type: 'apple',
@@ -217,34 +222,78 @@ called keys)
 > }
 undefined
 ```
+
+### Arrays
+
+Arrays is a collection of things. You'll find these useful for a large amount of
+items. You can create an empty array with `[]`. You can check the size, or
+length, of the array by viewing it's `length` property.
+
+Operation       | Description
+--------------- | -----------
+`push(element)` | Push `element` to the back of the array
+`pop()`         | Remove the back-most element from the array
+
+```
+$ node
+> const people = ['Sam', 'Jack'] // Create an array
+undefined
+> people.length                  // View the size of the array
+2
+> people.push('Bob')             // Add a person to the back
+3
+> people
+[ 'Sam', 'Jack', 'Bob' ]
+> people.pop()                   // Remove the last person in the array
+'Bob'
+> people
+[ 'Sam', 'Jack' ]
+```
+
+> You might have already noticed, but I'll explicitly state it: **in arrays,
+> order matters**.
+
+So you can access individual elements within an array by *indexing* the array.
+
+```
+> people[0] // Numbering starts at 0!
+'Sam'
+> people[1]
+'Jack'
+```
+
+### Spread operator
+
 Let's also say we have three functions called `handleApple`, `handleBanana`, and
-`handleGrape` that take the entire fruit object **without** its type (since each
-function only handles one type of fruit, this is not required information). How
-do we remove the type of the object, then pass the remainder to our functions?
-It turns out that ES6 has a syntax for this:
+`handleGrape` that take the entire fruit object **without** its `type` field
+(since each function only handles one type of fruit, this is not required
+information). How do we remove the type of the object, then pass the remainder
+to our functions? It turns out that ES6 has a syntax for this:
+
 ```
 /* We want an object that looks like { color: 'yellow', texture: 'smooth' }
-   Note: this does not work in console, so I am pretending it does only for the
-   purposes of this example. */
-
+ * Note: Enable ES6 features in the command line with the --harmony flag
+ */
+$ node --harmony
+> const fruit = { type: 'banana', color: 'yellow', texture: 'smooth' }
+undefined
 > const { type, ...fruitForProcessing } = fruit
 undefined
 > type
 'banana'
 > fruitForProcessing
-{ color: 'yellow',
-  texture: 'smooth' }
+{ color: 'yellow', texture: 'smooth' }
 ```
+
 Great! now we can pass it by calling `handleBanana(fruitForProcessing)`. This
 syntax is fairly flexible, so it can be used on arrays as well. We can also use
 the same syntax without ellipses (which is called [Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator))
 to create a new variable for each key of the object.
+
 ```
-/* This does work in console! */
-Ardents-iMac:~ ardentlabs$ node
+/* Doesn't require ES6 */
+$ node
 > const fruit = { type: 'banana', color: 'yellow', texture: 'smooth' }
-undefined
-> const { fruitType, fruitColor, fruitTexture } = fruit
 undefined
 > const { type, color, texture } = fruit
 undefined
@@ -259,7 +308,10 @@ Objects are complex, so message us on Slack if anything is still unclear!
 When we created our first [React Native](https://facebook.github.io/react-native/)
 project, you may have noticed the `import` and `export` keywords which are
 placed as follows:
+
 ```
+// App.js
+
 import React from 'react';
 import { Text, View } from 'react-native';
 
@@ -279,6 +331,7 @@ export default class App extends React.Component {
   }
 }
 ```
+
 These are called modules, and there are actually four of them. The first is
 called `import`, and it allows us to use one or multiple components that are
 declared in an external file. Both of these usage cases are shown in the example
@@ -287,8 +340,10 @@ above.
 The second module we will be discussing is `export`. If we call `export` on a
 class, it will be accessible from other files using `import` to find it. Here
 is an example of its usage:
+
 ```
-/* File 1 */
+// ReactIsGood.js
+
 import React from 'react';
 import { Text, View } from 'react-native';
 
@@ -307,11 +362,11 @@ export class ReactIsGood extends React.Component {
     );
   }
 }
+```
 
-/* End of File 1 */
 ```
-```
-/* File 2 */
+// App.js
+
 import React from 'react';
 import { ReactIsGood } from './File1';
 
@@ -322,9 +377,8 @@ export default class App extends React.Component {
     );
   }
 }
-
-/* End of File 2 */
 ```
+
 So what is `export default`? Well, you may have noticed that we import the
 default `React` component differently from our class that we called `export`
 on. The short explanation is that when we say `export default App`, we can then
