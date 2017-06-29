@@ -303,6 +303,47 @@ undefined
 
 Objects are complex, so message us on Slack if anything is still unclear!
 
+### Functions
+
+Taken directly from Eloquent JavaScript,
+
+> Functions are the bread and butter of JavaScript programming. The concept of
+> wrapping a piece of program in a value has many uses. It is a tool to
+> structure larger programs, to reduce repetition, to associate names with
+> subprograms, and to isolate these subprograms from each other.
+
+Functions may take one or more *parameters* and may *return* a value. Let's
+create one here that operates on two numbers.
+
+```
+const add = (a, b) => {
+  return a + b;
+}
+```
+
+In this example, we've created two **parameters**: `a` and `b`. We then add
+these two parameters together and **return** the result.
+
+> Note: We are using a *fat arrow function* here, which is an ES6 feature.
+> This is equivalent to:
+> ```
+> function add(a, b) {
+>   return a + b;
+> }
+> ```
+> and also equivalent to:
+> ```
+> const add = function(a, b) {
+>   return a + b;
+> }
+> ```
+> We will discuss the differences later within the notes.
+
+```
+> add(3, 5)
+8
+```
+
 ### Modules
 
 When we created our first [React Native](https://facebook.github.io/react-native/)
