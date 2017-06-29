@@ -257,3 +257,83 @@ undefined
 ```
 
 Objects are complex, so message us on Slack if anything is still unclear!
+
+### Modules
+
+When we created our first [React Native](https://facebook.github.io/react-native/)
+project, you may have noticed the `import` and `export` keywords which are
+placed as follows:
+```
+import React from 'react';
+import { Text, View } from 'react-native';
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <View>
+        <Text>
+          If you like React on the web, you'll like React Native.
+        </Text>
+        <Text>
+          You just use native components like 'View' and 'Text',
+          instead of web components like 'div' and 'span'.
+        </Text>
+      </View>
+    );
+  }
+}
+```
+These are called modules, and there are actually four of them. The first is
+called `import`, and it allows us to use one or multiple components that are
+declared in an external file. Both of these usage cases are shown in the example
+above.
+
+The second module we will be discussing is `export`. If we call `export` on a
+class, it will be accessible from other files using `import` to find it. Here
+is an example of its usage:
+```
+/* File 1 */
+import React from 'react';
+import { Text, View } from 'react-native';
+
+export class ReactIsGood extends React.Component {
+  render() {
+    return (
+      <View>
+        <Text>
+          If you like React on the web, you'll like React Native.
+        </Text>
+        <Text>
+          You just use native components like 'View' and 'Text',
+          instead of web components like 'div' and 'span'.
+        </Text>
+      </View>
+    );
+  }
+}
+
+/* End of File 1 */
+```
+```
+/* File 2 */
+import React from 'react';
+import { ReactIsGood } from './File1';
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <ReactIsGood/>
+    );
+  }
+}
+
+/* End of File 2 */
+```
+So what is `export default`? Well, you may have noticed that we import the
+default `React` component differently from our class that we called `export`
+on. The short explanation is that when we say `export default App`, we can then
+later `import App from 'containing-file'`. If we were to `export App` instead,
+we would need to `import { App } from 'containing-file` instead.
+
+There is one more module you will run into, and it is called `require`. This
+module's purpose is to `// TODO the rest is yours.`
