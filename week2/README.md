@@ -148,7 +148,8 @@ undefined
 We see that, despite being stored in a `const` variable, we are able to change
 an element of the object `shouldNotChange`. This is because we are simply
 modifying one of the children of `shouldNotChange` instead of modifying the
-object itself. Be aware of this when designing your apps!
+object itself (objects are discussed in the section below). Be aware of this
+when designing your apps!
 
 Scoping is another important aspect of variable usage. To reason out why, let's
 ask a simple question: If we create a variable, when is it deleted?
@@ -192,3 +193,67 @@ we will need to access it using `this.variable3`.
 myFunction is called and deleted when myFunction completes (or returns). Since
 it can only be accessed from inside of myFunction, it will always be called
 `variable4`.
+
+### Objects
+
+The simplest object that can be created in JavaScript is `{}`, which is an empty
+object. We can use this syntax to create any object we'd like, such as `{ type:
+'banana', color: 'yellow', texture: 'smooth' }`. We can take this object syntax
+and use the command line to gain a better understanding of how it works:
+```
+Ardents-iMac:~ ardentlabs$ node
+> const fruit = { type: 'banana', color: 'yellow', texture: 'smooth' }
+undefined
+> fruit.type
+'banana'
+> fruit.color
+'yellow'
+```
+Now, we are passed a new fruit with more than three descriptors (these are
+called keys)
+```
+> const newFruit = {
+>   type: 'apple',
+>   color: 'red',
+>   texture: 'mushy',
+>   name: 'Red Delicious',
+>   hasSkin: true,
+> }
+undefined
+```
+Let's also say we have three functions called `handleApple`, `handleBanana`, and
+`handleGrape` that take the entire fruit object **without** its type (since each
+function only handles one type of fruit, this is not required information). How
+do we remove the type of the object, then pass the remainder to our functions?
+It turns out that ES6 has a syntax for this:
+```
+/* We want an object that looks like { color: 'yellow', texture: 'smooth' }
+   Note: this does not work in console, so I am pretending it does only for the
+   purposes of this example. */
+
+> const { type, ...fruitForProcessing } = fruit
+undefined
+> type
+'banana'
+> fruitForProcessing
+{ color: 'yellow',
+  texture: 'smooth' }
+```
+Great! now we can pass it by calling `handleBanana(fruitForProcessing)`. This
+syntax is fairly flexible, so it can be used on arrays as well. We can also use
+the same syntax without ellipses (which is called [Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator))
+to create a new variable for each key of the object.
+```
+/* This does work in console! */
+Ardents-iMac:~ ardentlabs$ node
+> const fruit = { type: 'banana', color: 'yellow', texture: 'smooth' }
+undefined
+> const { fruitType, fruitColor, fruitTexture } = fruit
+undefined
+> const { type, color, texture } = fruit
+undefined
+> type
+'banana'
+```
+
+Objects are complex, so message us on Slack if anything is still unclear!
