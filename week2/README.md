@@ -50,13 +50,9 @@ Escape Character | Output
 `\"`             | Double Quote
 `\\`             | Backslash
 `\n`             | New Line
-`\b`             | Backspace
-`\f`             | Form Feed
-`\t`             | Horizontal Tabulator
-`\v`             | Vertical Tabulator
+`\t`             | Tab
 
-Only the first four of these make sense for our usage, so don't worry about the
-others.
+ > You can find more of these [here](https://docs.microsoft.com/en-us/scripting/javascript/advanced/special-characters-javascript)
 
 ### Operators
 
