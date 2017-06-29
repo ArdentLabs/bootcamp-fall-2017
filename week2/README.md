@@ -15,10 +15,12 @@ enough time to do so.
 
 ### Types
 
-There are just a few types we'll want to focus on in JavaScript, namely numbers,
-strings, and booleans.
+There are just a few types we'll want to focus on in JavaScript, namely
+booleans, strings, and numbers.
 
-__**Numbers**__ are represented as you might expect:
+**_Booleans_** can hold just two values: true or false.
+
+**_Numbers_** are represented as you might expect:
 ```
 8
 8.16
@@ -27,7 +29,7 @@ __**Numbers**__ are represented as you might expect:
 form 8.332e8. */
 ```
 
-__**Strings**__ are represented in a similar way to other languages:
+**_Strings_** are represented in a similar way to other languages:
 ```
 /* These two strings are identical */
 "Hello World!"
@@ -47,7 +49,7 @@ Escape Character | Output
 `\'`             | Single Quote
 `\"`             | Double Quote
 `\\`             | Backslash
-`\r`             | Carriage Return
+`\n`             | New Line
 `\b`             | Backspace
 `\f`             | Form Feed
 `\t`             | Horizontal Tabulator
@@ -55,8 +57,6 @@ Escape Character | Output
 
 Only the first four of these make sense for our usage, so don't worry about the
 others.
-
-__**Booleans**__ can hold just two values: true or false.
 
 ### Operators
 
@@ -95,12 +95,12 @@ They also return boolean values.
 Operator | Operation Performed
 -------- | -----------------------
 `&&`     | Logical AND: Returns true only if both objects are true (`true && true` returns `true`)
-`||`     | Logical OR:  Returns false only if both objects are false (`false || false` returns `false`)
+`\|\|`   | Logical OR:  Returns false only if both objects are false (`false \|\| false` returns `false`)
 `!`      | Logical NOT: Returns the opposite of what it is passed (`!false` returns `true`)
 
 ### Variables
 
-We will be discussing two types of variables in JavaScript: `let`s and `const`s.
+We will be discussing two types of variables in JavaScript: `let` and `const`.
 
 A `let` should be your default choice if you want to change the value of the
 variable later. Here is an example executed in the console using a `let`:
@@ -119,7 +119,8 @@ undefined
 ```
 
 A `const` variable should be your choice if you wish to never change the value
-you store inside of it. Example:
+you store inside of it. **We encourage the use of `const` variables wherever
+it is possible to do so**. Example:
 ```
 Ardents-iMac:~ ardentlabs$ node
 > const cannotChangeThis = 'I want a pony!'
