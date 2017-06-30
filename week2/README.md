@@ -353,6 +353,13 @@ these two parameters together and **return** the result.
 8
 ```
 
+ > If you're feeling particularly adventurous, you can do some more research on
+ > [functions in JavaScript][1]. As it turns outs, functions are just objects!
+ > "In JavaScript every function is actually a Function object." Pretty cool
+ > if you ask me.
+
+[1]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
+
 ### Higher order functions
 
 One really powerful feature of JavaScript is its support for functions as a
@@ -418,7 +425,7 @@ const people = ['Sam', 'Dallas', 'Jack'];
 const computers = ['iMac', 'Alienware', 'Surface Pro'];
 ```
 
-I want to **map** each person a computer.
+I want to **map** each person to a computer.
 
 ```
 const assignments = people.map((person, index) => {
@@ -432,13 +439,13 @@ const assignments = people.map((person, index) => {
 Since all we're doing is returning, we can *imply* the return.
 
 ```
-const assignments = people.map((person, index) => {{
+const assignments = people.map((person, index) => ({
     person,
     computer: computers[index],
-}})
+}))
 ```
  > Important: If you want to return an object from a fat arrow function, you have to
- > wrap it in an additional set of curly braces.
+ > wrap it in a set of parenthesis.
 
 This is equivalent to using an explicit `for` loop.
 
