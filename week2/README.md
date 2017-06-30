@@ -338,6 +338,13 @@ const add = (a, b) => {
 > ```
 > We will discuss the differences later within the notes.
 
+You can also shorten this by *implying a return*. Whatever is after the fat
+arrow (`=>`) will be returned.
+
+```
+const add = (a, b) => a + b;    // Much shorter!
+```
+
 In this example, we've created two **parameters**: `a` and `b`. We then add
 these two parameters together and **return** the result.
 
@@ -398,6 +405,58 @@ execute(3, 5, add)
 ```
  > Note: This isn't valid JavaScript, it's just my way of showing you what's
  > going on behind the scenes.
+
+### Revisiting arrays
+
+As it turns out, one nifty use case of passing a function to a function is when
+you're working with arrays.
+
+Let's say we have a group of people and a collection of computers.
+
+```
+const people = ['Sam', 'Dallas', 'Jack'];
+const computers = ['iMac', 'Alienware', 'Surface Pro'];
+```
+
+I want to **map** each person a computer.
+
+```
+const assignments = people.map((person, index) => {
+  return {
+    person,
+    computer: computers[index],
+  };
+})
+```
+
+Since all we're doing is returning, we can *imply* the return.
+
+```
+const assignments = people.map((person, index) => {{
+    person,
+    computer: computers[index],
+}})
+```
+ > Important: If you want to return an object from a fat arrow function, you have to
+ > wrap it in an additional set of curly braces.
+
+This is equivalent to using an explicit `for` loop.
+
+```
+// Not as nice... 🤢
+
+const assignments = [];
+
+for (let i = 0; i < people.length; i++) {
+  assignments.push({
+    person: people[i],
+    computer: computers[i],
+  });
+}
+```
+
+We'll be using `Array.map` often for working with large sets of data that we'll
+need to map to React components, so it's definitely valuable to learn.
 
 ### Classes
 
