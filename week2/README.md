@@ -21,6 +21,7 @@ booleans, strings, and numbers.
 **_Booleans_** can hold just two values: true or false.
 
 **_Numbers_** are represented as you might expect:
+
 ```
 8
 8.16
@@ -29,18 +30,22 @@ booleans, strings, and numbers.
 ```
 
 **_Strings_** are represented in a similar way to other languages:
+
 ```
-/* These two strings are identical */
 "Hello World!"
 'Hello World!'
+`Hello World!` // Template string (ES6)
 ```
+
 We can also use a set of *escape characters* for special functions:
+
 ```
 "This is the first line\nAnd this is the second"
 /* Displays as */
 This is the first line
 And this is the second
 ```
+
 Here are some common escape characters:
 
 Escape Character | Output
@@ -355,8 +360,8 @@ these two parameters together and **return** the result.
 
  > If you're feeling particularly adventurous, you can do some more research on
  > [functions in JavaScript][1]. As it turns outs, functions are just objects!
- > "In JavaScript every function is actually a Function object." Pretty cool
- > if you ask me.
+
+ > "In JavaScript every function is actually a Function object."
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
 
@@ -467,7 +472,99 @@ need to map to React components, so it's definitely valuable to learn.
 
 ### Classes
 
+Classes are what we've been working with in class so far. If you've worked with
+an object-oriented programming language before, these will look familiar to you.
 
+```
+class Animal {
+}
+```
+
+Let's add a **constructor**, which is used for initializing class variables.
+Conventionally, we store all class variables within a special object called
+`this`. This object will already be created for you and will contain everything
+about your class.
+
+ > Fun fact: In JavaScript, classes are really just objects.
+
+```
+class Animal {
+  constructor(name) {
+    this.name = name;
+    this.species = 'homosapien';
+  }
+}
+```
+
+ES7 adds support for *instance properties*, which allows you moves the
+initialization of class variables to outside the constructor. I recommend
+sticking with the previous method since it's more explicit about assigning
+to the `this` object.
+
+```
+// Same as...
+
+class Animal {
+  species = 'homosapien';
+  constructor(name) {
+    this.name = name;
+  }
+}
+```
+
+The constructor is a special function that gets called whenever you make a new
+instance of a class. Just like functions, they can accept parameters.
+
+```
+> const me = new Animal('Sam');
+> `My name is ${me.name} and I'm a ${me.species}.`
+My name is Sam and I'm a homosapien.
+```
+ > We using template strings here, which will replace `${...}` with whatever
+ > `...` evaluates to.
+
+In addition to class variables, you can also add class functions. These are more
+commonly known as **methods**.
+
+```
+class Animal {
+  constructor(name) {
+    this.name = name;
+    this.species = 'homosapien';
+
+    this.sayHello = this.sayHello.bind(this); // Nasty 🤢
+  }
+  sayHello() {
+    return `My name is ${this.name} and I'm a ${this.species}.`;
+  }  
+}
+```
+
+You may have noticed a nasty-looking addition to our constructor: `bind`.
+When we initially create a new method, it won't have access to the special
+`this` object. This is where `bind` comes in, it *binds* the special `this`
+object of your class to a function of your choice.
+
+Binding is a pain in the neck. Luckily, we can avoid some of that pain by taking
+advantage of ES7's *instance properties* and ES6's *fat arrow functions*.
+
+```
+class Animal {
+  constructor(name) {
+    this.name = name;
+    this.species = 'homosapien';
+  }
+  sayHello = () => {
+    // Works! 👌🏽
+    return `My name is ${this.name} and I'm a ${this.species}.`;
+  }  
+}
+```
+
+Let's break it down. We're assigning `this.` // TODO (Sam): Finish
+
+One little feature of fat arrow functions that I intentionally didn't to tell
+you about was it's ability to *automagically* bind `this` for you!
 
 ### Modules
 
