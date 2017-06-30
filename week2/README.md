@@ -250,9 +250,6 @@ undefined
 [ 'Sam', 'Jack' ]
 ```
 
-> You might have already noticed, but I'll explicitly state it: **in arrays,
-> order matters**.
-
 So you can access individual elements within an array by *indexing* the array.
 
 ```
@@ -262,18 +259,23 @@ So you can access individual elements within an array by *indexing* the array.
 'Jack'
 ```
 
-### Spread operator
+> You might have already noticed, but I'll explicitly state it: **in arrays,
+> order matters**.
+
+### Destructuring
 
 Let's also say we have three functions called `handleApple`, `handleBanana`, and
-`handleGrape` that take the entire fruit object **without** its `type` field
-(since each function only handles one type of fruit, this is not required
-information). How do we remove the type of the object, then pass the remainder
-to our functions? It turns out that ES6 has a syntax for this:
+`handleGrape` that take the entire fruit object **without** its `type` field.
+How do we remove the type of the object, then pass the remainder to our
+functions? It turns out that ES6 has syntax for this:
 
 ```
-/* We want an object that looks like { color: 'yellow', texture: 'smooth' }
+/*
  * Note: Enable ES6 features in the command line with the --harmony flag
+ *
+ * We want an object that looks like { color: 'yellow', texture: 'smooth' }
  */
+
 $ node --harmony
 > const fruit = { type: 'banana', color: 'yellow', texture: 'smooth' }
 undefined
@@ -318,11 +320,8 @@ create one here that operates on two numbers.
 ```
 const add = (a, b) => {
   return a + b;
-}
+};
 ```
-
-In this example, we've created two **parameters**: `a` and `b`. We then add
-these two parameters together and **return** the result.
 
 > Note: We are using a *fat arrow function* here, which is an ES6 feature.
 > This is equivalent to:
@@ -339,10 +338,70 @@ these two parameters together and **return** the result.
 > ```
 > We will discuss the differences later within the notes.
 
+In this example, we've created two **parameters**: `a` and `b`. We then add
+these two parameters together and **return** the result.
+
 ```
 > add(3, 5)
 8
 ```
+
+### Higher order functions
+
+One really powerful feature of JavaScript is its support for functions as a
+*first class types*. This means that whatever you can do with regular types,
+you can do with functions.
+
+Let's do something mind-bending 💫
+
+```
+const execute = (a, b, operation) => {
+  return operation(a, b);
+};
+```
+
+We've created a function that takes 3 parameters: `a`, `b`, and `operation`
+which we expect to be a function. We return the result of calling the
+`operation` function with the parameters `a` and `b`.
+
+Confused? Don't be. Let's see how this would be used.
+
+```
+> execute(3, 5, add)
+8
+```
+
+Just like before, we're passing two numbers. But this time, we're also passing
+the function we made earlier, `add`. When the `execute` function runs, it will
+run `add` with `3` and `5` as parameters.
+
+Let's break it down even further.
+
+```
+execute(3, 5, add)
+
+// evaluates to...
+
+(3, 5, add) => {
+  return add(3, 5);
+}
+
+// evaluates to...
+
+(3, 5, add) => {
+  return 8;
+};
+
+// evaluates to...
+
+8
+```
+ > Note: This isn't valid JavaScript, it's just my way of showing you what's
+ > going on behind the scenes.
+
+### Classes
+
+
 
 ### Modules
 
