@@ -106,7 +106,7 @@ We will be discussing two types of variables in JavaScript: `let` and `const`.
 
 A `let` should be your default choice if you want to change the value of the
 variable later. Here is an example executed in the console using a `let`:
-```
+```js
 $ node
 > let myVariable = 'spaghetti and meatballs'
 undefined
@@ -123,7 +123,7 @@ undefined
 A `const` variable should be your choice if you wish to never change the value
 you store inside of it. **We encourage the use of `const` variables wherever
 it is possible to do so**. Example:
-```
+```js
 $ node
 > const cannotChangeThis = 'I want a pony!'
 undefined
@@ -135,7 +135,7 @@ TypeError: Assignment to constant variable.
 
 To be aware of the shortcomings of the `const` variable type, let's see one more
 example:
-```
+```js
 $ node
 > const shouldNotChange = { favoriteAnimal: 'puppy' }
 undefined
@@ -159,7 +159,7 @@ ask a simple question: If we create a variable, when is it deleted?
 
 The answer depends on where we create the variable in our code. Consider the
 project outline below:
-```
+```js
 import React, { Component } from 'react';
 
 const variable1 = 'one';
@@ -197,14 +197,14 @@ myFunction is called and deleted when myFunction completes (or returns). Since
 it can only be accessed from inside of myFunction, it will always be called
 `variable4`.
 
-### Objects
+## Objects
 
 The simplest object that can be created in JavaScript is `{}`, which is an empty
 object. We can use this syntax to create any object we'd like, such as `{ type:
 'banana', color: 'yellow', texture: 'smooth' }`. We can take this object syntax
 and use the command line to gain a better understanding of how it works:
 
-```
+```js
 $ node
 > const fruit = { type: 'banana', color: 'yellow', texture: 'smooth' }
 undefined
@@ -217,7 +217,7 @@ undefined
 Now, we are passed a new fruit with more than three descriptors (these are
 called keys)
 
-```
+```js
 > const newFruit = {
 >   type: 'apple',
 >   color: 'red',
@@ -228,7 +228,7 @@ called keys)
 undefined
 ```
 
-### Arrays
+## Arrays
 
 Arrays is a collection of things. You'll find these useful for a large amount of
 items. You can create an empty array with `[]`. You can check the size, or
@@ -239,7 +239,7 @@ Operation       | Description
 `push(element)` | Push `element` to the back of the array
 `pop()`         | Remove the back-most element from the array
 
-```
+```js
 $ node
 > const people = ['Sam', 'Jack'] // Create an array
 undefined
@@ -257,7 +257,7 @@ undefined
 
 So you can access individual elements within an array by *indexing* the array.
 
-```
+```js
 > people[0] // Numbering starts at 0!
 'Sam'
 > people[1]
@@ -274,7 +274,7 @@ Let's also say we have three functions called `handleApple`, `handleBanana`, and
 How do we remove the type of the object, then pass the remainder to our
 functions? It turns out that ES6 has syntax for this:
 
-```
+```js
 /*
  * Note: Enable ES6 features in the command line with the --harmony flag
  *
@@ -297,7 +297,7 @@ syntax is fairly flexible, so it can be used on arrays as well. We can also use
 the same syntax without ellipses (which is called [Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator))
 to create a new variable for each key of the object.
 
-```
+```js
 /* Doesn't require ES6 */
 $ node
 > const fruit = { type: 'banana', color: 'yellow', texture: 'smooth' }
@@ -310,7 +310,7 @@ undefined
 
 Objects are complex, so message us on Slack if anything is still unclear!
 
-### Functions
+## Functions
 
 Taken directly from Eloquent JavaScript,
 
@@ -322,7 +322,7 @@ Taken directly from Eloquent JavaScript,
 Functions may take one or more *parameters* and may *return* a value. Let's
 create one here that operates on two numbers.
 
-```
+```js
 const add = (a, b) => {
   return a + b;
 };
@@ -330,13 +330,13 @@ const add = (a, b) => {
 
 > Note: We are using a *fat arrow function* here, which is an ES6 feature.
 > This is equivalent to:
-> ```
+> ```js
 > function add(a, b) {
 >   return a + b;
 > }
 > ```
 > and also equivalent to:
-> ```
+> ```js
 > const add = function(a, b) {
 >   return a + b;
 > }
@@ -346,14 +346,14 @@ const add = (a, b) => {
 You can also shorten this by *implying a return*. Whatever is after the fat
 arrow (`=>`) will be returned.
 
-```
+```js
 const add = (a, b) => a + b;    // Much shorter!
 ```
 
 In this example, we've created two **parameters**: `a` and `b`. We then add
 these two parameters together and **return** the result.
 
-```
+```js
 > add(3, 5)
 8
 ```
@@ -365,7 +365,7 @@ these two parameters together and **return** the result.
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
 
-### Higher order functions
+## Higher order functions
 
 One really powerful feature of JavaScript is its support for functions as a
 *first class types*. This means that whatever you can do with regular types,
@@ -373,7 +373,7 @@ you can do with functions.
 
 Let's do something mind-bending 💫
 
-```
+```js
 const execute = (a, b, operation) => {
   return operation(a, b);
 };
@@ -385,7 +385,7 @@ which we expect to be a function. We return the result of calling the
 
 Confused? Don't be. Let's see how this would be used.
 
-```
+```js
 > execute(3, 5, add)
 8
 ```
@@ -396,7 +396,7 @@ run `add` with `3` and `5` as parameters.
 
 Let's break it down even further.
 
-```
+```js
 execute(3, 5, add)
 
 // evaluates to...
@@ -425,14 +425,14 @@ you're working with arrays.
 
 Let's say we have a group of people and a collection of computers.
 
-```
+```js
 const people = ['Sam', 'Dallas', 'Jack'];
 const computers = ['iMac', 'Alienware', 'Surface Pro'];
 ```
 
 I want to **map** each person to a computer.
 
-```
+```js
 const assignments = people.map((person, index) => {
   return {
     person,
@@ -443,7 +443,7 @@ const assignments = people.map((person, index) => {
 
 Since all we're doing is returning, we can *imply* the return.
 
-```
+```js
 const assignments = people.map((person, index) => ({
     person,
     computer: computers[index],
@@ -454,7 +454,7 @@ const assignments = people.map((person, index) => ({
 
 This is equivalent to using an explicit `for` loop.
 
-```
+```js
 // Not as nice... 🤢
 
 const assignments = [];
@@ -470,12 +470,12 @@ for (let i = 0; i < people.length; i++) {
 We'll be using `Array.map` often for working with large sets of data that we'll
 need to map to React components, so it's definitely valuable to learn.
 
-### Classes
+## Classes
 
 Classes are what we've been working with in class so far. If you've worked with
 an object-oriented programming language before, these will look familiar to you.
 
-```
+```js
 class Animal {
 }
 ```
@@ -485,9 +485,10 @@ Conventionally, we store all class variables within a special object called
 `this`. This object will already be created for you and will contain everything
 about your class.
 
- > Fun fact: In JavaScript, classes are really just objects.
+ > Fun fact: In JavaScript, classes are really just functions
+ > ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes))
 
-```
+```js
 class Animal {
   constructor(name) {
     this.name = name;
@@ -501,7 +502,7 @@ initialization of class variables to outside the constructor. I recommend
 sticking with the previous method since it's more explicit about assigning
 to the `this` object.
 
-```
+```js
 // Same as...
 
 class Animal {
@@ -510,6 +511,8 @@ class Animal {
     this.name = name;
   }
 }
+
+// Note: ES7 support is sparse for Node v6 LTS
 ```
 
 The constructor is a special function that gets called whenever you make a new
@@ -518,7 +521,7 @@ instance of a class. Just like functions, they can accept parameters.
 ```
 > const me = new Animal('Sam');
 > `My name is ${me.name} and I'm a ${me.species}.`
-My name is Sam and I'm a homosapien.
+'My name is Sam and I'm a homosapien.'
 ```
  > We using template strings here, which will replace `${...}` with whatever
  > `...` evaluates to.
@@ -526,7 +529,7 @@ My name is Sam and I'm a homosapien.
 In addition to class variables, you can also add class functions. These are more
 commonly known as **methods**.
 
-```
+```js
 class Animal {
   constructor(name) {
     this.name = name;
@@ -536,7 +539,7 @@ class Animal {
   }
   sayHello() {
     return `My name is ${this.name} and I'm a ${this.species}.`;
-  }  
+  }
 }
 ```
 
@@ -548,7 +551,7 @@ object of your class to a function of your choice.
 Binding is a pain in the neck. Luckily, we can avoid some of that pain by taking
 advantage of ES7's *instance properties* and ES6's *fat arrow functions*.
 
-```
+```js
 class Animal {
   constructor(name) {
     this.name = name;
@@ -557,11 +560,199 @@ class Animal {
   sayHello = () => {
     // Works! 👌🏽
     return `My name is ${this.name} and I'm a ${this.species}.`;
-  }  
+  }
 }
 ```
 
-Let's break it down. We're assigning `this.` // TODO (Sam): Finish
-
 One little feature of fat arrow functions that I intentionally didn't to tell
 you about was it's ability to *automagically* bind `this` for you!
+
+Let's break it down: we're making an *instance property* named `sayHello` and
+assigning it a *fat arrow function* that returns a formatted string. The fat
+arrow function automagically binds the `this` object of *class* to `this` object
+of the *function*.
+
+```
+> const me = new Animal('Sam')
+> me.sayHello()
+'My name is Sam and I'm a homosapien.'
+```
+
+## Inheritance
+
+Let's say we have simple classes: `Square` and `Circle`.
+
+```js
+class Square {
+  constructor(width) {
+    this.width = width;
+    this.height= width;
+  }
+}
+
+class Circle {
+  constructor(radius) {
+    this.radius = radius;
+  }
+}
+```
+
+Let's make a function that can accept either a `Square` or a `Circle` as it's
+parameter and return the area of the shape.
+
+```js
+const getArea = (shape) => {
+  if (shape instanceof Square) {
+    return this.width * this.width;
+  }
+  if (shape instanceof Circle) {
+    return Math.PI * this.radius * this.radius;
+  }
+  // Unsupported type
+  return 0;
+}
+```
+
+> Note: You can check the class type of a variable by using the `instanceof`
+> operator ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof)).
+
+If we were to add more shapes, we'd have to keep adding to the `getArea`
+function that we made. If we were to forget, it would return `0`. This could
+eventually lead to a bug. There has to be a better way.
+
+What if we add methods to each class?
+
+```js
+class Square {
+  constructor(width) {
+    this.width = width;
+  }
+  getArea = () => {
+    return this.width * this.width;
+  }
+}
+
+class Circle {
+  constructor(radius) {
+    this.radius = radius;
+  }
+  getArea = () => {
+    return Math.PI * this.radius * this.radius;
+  }
+}
+```
+
+This would definately save us the trouble of passing the instance of the class
+to a function. Now we can just call `getArea()` directly from the class instace!
+
+```js
+> const shapes = [new Square(7), new Circle(2), new Square(4)];
+> shapes.map(shape => shape.getArea());
+[
+  49,
+  12.566370614359172,
+  16
+]
+```
+
+But what if we made a new class called `Rectangle` that didn't support the
+`getArea()` method? It would give us a vague error saying
+`shape.getArea is not a function`. If we didn't already know beforehand that
+`Rectangle` was the culprit, then it would take us some time to find who wasn't
+implementing `getArea()`. We can do better.
+
+We should have a reasonable default just in case someone forgets to override
+the `getArea()` method. How would we do that?
+
+Introducing **_inheritance_**!
+
+```js
+class Shape {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+  getArea = () => {
+    // Give a sensible default
+    if (this.width && this.height) {
+      return this.width * this.height;
+    }
+
+    console.error(`You forgot to override "getArea()" for ${this.name}`);
+    return 0;
+  }
+}
+
+class Square extends Shape {
+  constructor(width) {
+    super(width, width);
+  }
+}
+
+class Circle extends Shape {
+  constructor(radius) {
+    super();
+    this.radius = radius;
+  }
+  getArea = () => {
+    return Math.PI * this.radius * this.radius;
+  }
+}
+
+class Rectangle extends Shape {
+  constructor(width, height) {
+    super(width, height);
+  }
+}
+```
+
+Let's break down some of the new syntax:
+ 1. The `extend` keyword is used to specify which class you'd like to inherit
+    from. This essentially copies all the member variables and methods from the
+    *parent* class, or the class you're *extending* from. You can *override*
+    these variables and methods by just delaring them again in the *child*
+    class.
+ 2. The `super` function directly references the `constructor` of the class that
+    you *extended* from. When you call `super`, you're really just calling the
+    `constructor` of the parent class. If you override the constructor, you are
+    **required** to call `super`.
+
+So we've created a parent class called `Shape` which every other class is
+inheriting from. This allows us to provide defaults whereever neccessary. We've
+provided defaults in the constructor for assigning member variables, and for
+computing the area of the shape. On top of this, we added a warning if the
+area computation default is unsufficient.
+
+Let's try it out this time with some sample user input from Jack.
+
+```js
+const shapes = [
+  new Square(7),
+  3,
+  new Circle(2),
+  new Square(4),
+  false,
+  new Rectangle(4, 3),
+  'DROP TABLE USERS;',
+];
+
+shapes.map(element => {
+  if (element instanceof Shape) {
+    return element.getArea();
+  }
+  return 0;
+});
+
+// Returns:
+[
+  49,
+  0,
+  12.566370614359172,
+  16,
+  0,
+  12,
+  0
+]
+```
+
+**It's beautiful 😍**
