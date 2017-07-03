@@ -497,7 +497,7 @@ class Animal {
 }
 ```
 
-ES7 adds support for *instance properties*, which allows you moves the
+ES7 adds support for **instance properties**, which allows you moves the
 initialization of class variables to outside the constructor. I recommend
 sticking with the previous method since it's more explicit about assigning
 to the `this` object.
@@ -756,3 +756,16 @@ shapes.map(element => {
 ```
 
 **It's beautiful 😍**
+
+
+## Ending note
+
+Well that pretty much covers everything that we learned in class on week 2. If
+you have any questions about the material, send me a message on the Slack's
+`#bootcamp` channel. Keep your responses within a thread so we don't pollute
+the channel with back-and-forth messages.
+
+Dallas and I have office hours on Wednesday and Thursday from 1pm to 4pm this
+week due to the 4th of July being on Tuesday.
+
+ > Have a nice 4th of July!
