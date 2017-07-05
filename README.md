@@ -15,7 +15,7 @@ Week | Topic              | Description                                         
 ---- | ------------------ | ------------------------------------------------------------------------------------------------------------------------- | -------------------
    0 | [Starting Line][1] | Prepare your development machine for the trials ahead. Get started learning by reading the resources provided.            | None
    1 | [Hello World][2]   | Introduce the class. Establish channels of communication and coordination. Learn the basics of React development.         | None
-   2 | Going Native       | Take React and bring it to your iOS or Android phone. Get the code compiled and running on your very own phone.           | None
+   2 | [Going Native][3]  | Take React and bring it to your iOS or Android phone. Get the code compiled and running on your very own phone.           | None
    3 | Node.js & APIs     | Communicate with real-world APIs using web protocols. Discover which API best fits your interests. Introduce the backend. | Facial Recognition
    4 | Project            | Start your very own project. Get your Github repositories setup, teams coordinated, and project plans.                    | Machine Learning
    5 | Code Reviews       | Instructors will take this entire week to perform code reviews and provide guidance if needed.                            | Geospatial Analysis
@@ -29,6 +29,7 @@ Code reviews will take place at the end of every class for 45 minutes. On select
 
 [1]: https://github.com/ArdentLabs/bootcamp/tree/master/week0
 [2]: https://github.com/ArdentLabs/bootcamp/tree/master/week1
+[3]: https://github.com/ArdentLabs/bootcamp/tree/master/week2
 
 Accessing the slides
 ====================
