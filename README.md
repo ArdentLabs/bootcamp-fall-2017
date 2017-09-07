@@ -34,7 +34,7 @@ Week | Topic              | Description                                         
    4 | JS + React         | Find out where advanced JavaScript concepts fit into React Native's design.                                               | ???
    5 | Planet of the APIs | Communicate with real-world APIs using web protocols. Discover which APIs best fit your interests.                        | ???
    6 | Projects           | Develop a plan for your project. Form teams if desired. Create a Trello board outlining important project steps.          | ???
-   7 | ERR: Help          | Parse errors to find and fix problems. Search forums. Develop a troubleshooting strategy.                                 | ???
+   7 | ERROR Help         | Parse errors to find and fix problems. Search forums. Develop a troubleshooting strategy.                                 | ???
    8 | Code Review        | Work on your project in-class. Mandatory code reviews will be scheduled throughout the class.                             | ???
    9 | Deployment         | Prepare your code for deployment. Load it on your own device. Learn to submit apps to the App Store and Play Store.       | ???
   10 | Presentations      | Present what you've made. Every team will have 15 minutes to present with a slide show and demonstration.                 | ???
