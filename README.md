@@ -41,8 +41,6 @@ Week | Topic              | Description                                         
 
  > We reserve the right to move topics at any time for any reason.
 
- > **TODO** Move this section
-
  > **Disclaimer**: *Only Macs can natively develop for iOS.* This means that you
  > **absolutey need a Mac** to submit your work to the app store, and a Mac is
  > also **required** to use a device's hardware features (think camera, storage,
