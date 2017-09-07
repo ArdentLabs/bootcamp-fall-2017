@@ -66,11 +66,11 @@ Contact Information
 ![Image Missing...](/assets/dallas.jpg)
 ## Dallas Johnson
   * Email: dallas.johnson@ardentacademy.com
-  * Slack: <a href="slack://user?team=ardentacademy&id=dallasj">@dallasj</a>
+  * Slack: <a href="slack://user?team=ardentacademy&ampid=dallasj">@dallasj</a>
   * Office Hours: By announcement
 
 ![Image Missing...](/assets/sam.jpg)
 ## Sam Balana
   * Email: sam.balana@ardentacademy.com
-  * Slack: <a href="slack://user?team=ardentacademy&id=puradox">@puradox</a>
+  * Slack: <a href="slack://user?team=ardentacademy&ampid=puradox">@puradox</a>
   * Office Hours: TBA
