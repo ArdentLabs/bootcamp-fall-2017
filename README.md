@@ -72,5 +72,5 @@ Contact Information
 ![Image Missing...](/assets/sam.jpg)
 ## Sam Balana
   * Email: sam.balana@ardentacademy.com
-  * Slack: <a href="slack://user?team=ardentacademy&amp;id=puradox">@puradox</a>
+  * Slack: <a href="slack://open">@puradox</a>
   * Office Hours: TBA
