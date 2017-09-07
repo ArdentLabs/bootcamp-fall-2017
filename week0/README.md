@@ -1,18 +1,32 @@
 Week 0 - Starting Line :dash:
 =============================
+ > On your marks, get set, go!
 
- > On your mark, get set, go!
+These are the development programs we will be using throughout the course! Click
+any you may have lost.
 
-Throughout the length of the bootcamp, we will be using several services. You will need to make an account for each of these services to fully participate in all development activities.
- 1. [GitHub](https://github.com/join)
- 2. [Trello](https://trello.com/signup)
+<a href="https://github.com">
+<img src="../assets/octocat.svg" width="10%" style="padding:5px">
+<img src="../assets/github.svg"  width="23%" style="padding:5px">
+</a>
+<a href="https://trello.com">
+<img src="../assets/trello.svg"  width="33%" style="padding:5px">
+</a>
+<a href="https://nodejs.org/en/download/">
+<img src="../assets/nodejs.svg"  width="21%" style="padding:5px">
+</a>
+<a href="https://facebook.github.io/react-native/">
+<img src="../assets/react.svg"   width="50%" style="padding:5px">
+</a>
+<a href="https://slack.com">
+<img src="../assets/slack.svg"   width="33%" style="padding:5px">
+</a>
+<a href="https://getpostman.com">
+<img src="../assets/postman.svg" width="30%" style="padding:5px">
+</a>
 
-Send an email to [sam.balana@ardentacademy.com] with your Github and Trello usernames.
+In addition to these services, Windows users need to download [Git][1]. During
+installation, select "Use Git from the Windows Command Prompt" when prompted,
+and leave all other installation settings as their defaults.
 
-Here are some resources for the upcoming topics that we'll be diving into. Read them in order.
- 1. [Try Git](https://try.github.io)
- 2. [A re-introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) - At the very least, *skim* this
- 3. [ES6 for Humans](https://github.com/metagrover/ES6-for-humans) - Pay special attention to Arrow Functions and Classes
- 4. [React - Tutorial](https://facebook.github.io/react/tutorial/tutorial.html)
- 5. [React Native - Tutorial](https://facebook.github.io/react-native/docs/tutorial.html)
- 6. [React Native - Building Projects with Native Code](https://facebook.github.io/react-native/releases/next/docs/getting-started.html) - Read the *"Building Projects with Native Code"* section, **not** the "Quick Start" section.
+[1]: https://git-scm.com
