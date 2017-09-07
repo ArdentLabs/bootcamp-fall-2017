@@ -63,13 +63,13 @@ Week | Topic              | Description                                         
 Contact Information
 ===================
 
-![Image Missing...](https://github.com/ArdentLabs/bootcamp-fall-2017/tree/master/assets/dallas.jpg)
+![Image Missing...](/assets/dallas.jpg)
 ## Dallas Johnson
   * Email: dallas.johnson@ardentacademy.com
   * Slack: [@dallasj](slack://user?team={ardentacademy}&id={dallasj})
   * Office Hours: By announcement
 
-![Image Missing...](https://github.com/ArdentLabs/bootcamp-fall-2017/tree/master/assets/sam.jpg)
+![Image Missing...](/assets/sam.jpg)
 ## Sam Balana
   * Email: sam.balana@ardentacademy.com
   * Slack: [@puradox](slack://user?team={ardentacademy}&id={puradox})
