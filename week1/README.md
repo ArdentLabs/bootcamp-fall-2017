@@ -974,9 +974,12 @@ problems:
     05886116467109405077541002256983155200055935729725
     71636269561882670428252483600823257530420752963450
     ```
-   
+
    Write a function which finds a number of adjacent digits `n` in the
    1000-digit number that have the greatest product.
+
+Send all code using Slack's built-in code sharing by clicking on the `+` next to
+the message composition field. Make sure you send your code as a direct message!
 
 For testing purposes, you can run Javascript in the console by running
 `node`. This will open up an interactive terminal where you can
