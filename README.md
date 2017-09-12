@@ -28,7 +28,7 @@ Weekly Schedule
 Week | Topic              | Description                                                                                                               | Homework
 ---- | ------------------ | ------------------------------------------------------------------------------------------------------------------------- | -------------------
    0 | [Starting Line][0] | The resources you need for development. Come here if any of the files from your Week 1 USB drive get lost.                | None
-   1 | Hello World        | Introduce the class. Establish channels of communication and coordination. Learn the basics of JavaScript development.    | ???
+   1 | [Hello World][1]   | Introduce the class. Establish channels of communication and coordination. Learn the basics of JavaScript development.    | ???
    2 | Going Native       | Take React Native to your iOS or Android device using Expo. Explore React Native's basic components.                      | ???
    3 | Component Design   | Understand the benefits of React Native's component design. Build a test application using component design.              | ???
    4 | JS + React         | Find out where advanced JavaScript concepts fit into React Native's design.                                               | ???
