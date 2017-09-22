@@ -65,7 +65,7 @@ Contact Information
 ## Dallas Johnson
   * Email: dallas.johnson@ardentacademy.com
   * Slack: @dallasj
-  * Office Hours: By announcement
+  * Office Hours: Sundays, 3:00 - 5:00
 
 ![Image Missing...](/assets/sam.jpg)
 ## Sam Balana
