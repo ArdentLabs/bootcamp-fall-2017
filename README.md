@@ -29,7 +29,7 @@ Week | Topic              | Description                                         
 ---- | ------------------ | ------------------------------------------------------------------------------------------------------------------------- | -------------------
    0 | [Starting Line][0] | The resources you need for development. Come here if any of the files from your Week 1 USB drive get lost.                | None
    1 | [Hello World][1]   | Introduce the class. Establish channels of communication and coordination. Learn the basics of JavaScript development.    | JavaScript Questions
-   2 | [Going Native][2]  | Take React Native to your iOS or Android device using Expo. Explore React Native's basic components.                      | ???
+   2 | [Going Native][2]  | Take React Native to your iOS or Android device using Expo. Explore React Native's basic components.                      | MathApp Screens
    3 | Component Design   | Understand the benefits of React Native's component design. Build a test application using component design.              | ???
    4 | JS + React         | Find out where advanced JavaScript concepts fit into React Native's design.                                               | ???
    5 | Planet of the APIs | Communicate with real-world APIs using web protocols. Discover which APIs best fit your interests.                        | ???
