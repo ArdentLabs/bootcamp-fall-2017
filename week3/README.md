@@ -292,11 +292,11 @@ app in-class, so you will want to be acquainted with React Native's basic
 concepts to keep up.
 
 Your assignment for this week is to complete the BirthdayApp as discussed in
-class. I have created a [Trello Board][2] for the project that you should use to keep
-your development organized. Start by clicking `Show Menu` in the upper right
-corner, then click `More...` , and finally click `Copy Board` to create your own
-copy of the board to modify. Please work through things based on the priority
-labels provided (Red > Orange > Yellow > Green)!
+class. I have created a [Trello Board][2] for the project that you should use to
+keep your development organized. Start by clicking `Show Menu` in the upper
+right corner, then click `More...` , and finally click `Copy Board` to create
+your own copy of the board to modify. Please work through things based on the
+priority labels provided (Red > Orange > Yellow > Green)!
 
 [2]: https://trello.com/b/Z4xVcIoe/birthdayapp
 
