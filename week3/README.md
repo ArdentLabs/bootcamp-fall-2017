@@ -46,7 +46,7 @@ class SimpleButton extends Component {
       </TouchableOpacity>
     );
   }
-} 
+}
 ```
 
 Declared as:
@@ -282,3 +282,38 @@ To understand better the choices that split components, we will be going over an
 app which implements the game Snake. The GitHub page is located [here][1]!
 
 [1]: https://github.com/ArdentLabs/SnakeApp
+
+# Week 3 Review + Assignments
+
+Three weeks done! Hopefully everyone is feeling a little more comfortable in
+React Native - if it still seems foreign, try to put in a couple extra hours to
+figure out this week's homework. Next week we will be designing and creating an
+app in-class, so you will want to be acquainted with React Native's basic
+concepts to keep up.
+
+Your assignment for this week is to complete the BirthdayApp as discussed in
+class. I have created a [Trello Board][2] for the project that you should use to keep
+your development organized. Start by clicking `Show Menu` in the upper right
+corner, then click `More...` , and finally click `Copy Board` to create your own
+copy of the board to modify. Please work through things based on the priority
+labels provided (Red > Orange > Yellow > Green)!
+
+[2]: https://trello.com/b/Z4xVcIoe/birthdayapp
+
+> Note: You will need to make a Trello account now if you haven't already.
+
+The board you create during Week 5/6 for your own project will look very similar
+to this, so you may want to click through everything and see how it is
+formatted.
+
+Like last week, I will be checking your implementations of BirthdayApp at the
+start of class, so make sure everything is working before class! I will be
+available to answer your questions over Slack all week, and I will be holding
+office hours for two hours before class if you need any help in-person.
+
+Hope everyone's week is going smoothly!
+
+-Dallas
+
+P.S. If you feel comfortable starting your project before Week 5/6, you are more
+than welcome to. Send me a direct message on Slack if you want to get started.

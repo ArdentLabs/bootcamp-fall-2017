@@ -384,7 +384,7 @@ render() {
     'Friday',
     'Saturday',
   ]
-  
+
   return (
     <Text>{weekdays[today.getDay()]}</Text>
   );
@@ -555,3 +555,49 @@ fun begins! Head on over to the [GitHub page for MathApp][5] to download the
 source and prepare our first app!
 
 [5]: https://github.com/ArdentLabs/MathApp
+
+# Week 2 Review + Assignments
+
+Another week under our belts! Now that we have touched some React Native code,
+we can really get to the meat of the course. In class this week, we designed a
+screen to display English questions but left the `Math` screen undefined.
+
+Your homework assignment this week has two parts:
+
+1. Create the MathApp's `Math` screen! You should keep in mind that its fields are
+defined differently than those in the `English` screen - you can find the format
+of each on the [GitHub](https://github.com/ArdentLabs/MathApp) page.
+
+> Tip: You'll need to look at the React Native documentation for [TextInput][6].
+> It's the only way that you'll be able to get reasonable input from the user
+> for this type of problem.
+
+[6]: https://facebook.github.io/react-native/docs/textinput.html
+
+> Tip: `TextInput` requires the use of component states! The documentation shows
+> an example of how to use `this.setState` in conjunction with `TextInput`.
+
+> Tip: My TextButton component has four props you should care about: `title`,
+> `style`, `disabled`, and `onPress`. You may not recognize `disabled`; it takes
+> in a boolean value and disables the button if the boolean is true.
+
+2. Improve upon the `Start` screen so that the user is able to select different
+levels of questions, and select a random question that matches the level that is
+selected. I am leaving this one intentionally vague, but I will tell you that
+React Native has a [Picker][7] component that you may find useful.
+
+[7]: https://facebook.github.io/react-native/docs/picker.html
+
+Don't worry too much if you can't complete this homework assignment - we have
+only started learning React Native code so it may be quite challenging. I will
+be checking each person's version of the app at the start of class, and I will
+go over one possible solution as well.
+
+In other news, I will be checking the results of the poll tomorrow evening and
+will decide when office hours will be held based on that. Even if you can't make
+it to office hours, I will make sure to check Slack several times a day to
+answer any questions you may have!
+
+Have a great week,
+
+-Dallas
