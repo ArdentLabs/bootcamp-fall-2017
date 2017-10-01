@@ -25,19 +25,19 @@ Now let's make something awesome :tada:
 
 Weekly Schedule
 ===============
-Week | Topic              | Description                                                                                                               | Homework
----- | ------------------ | ------------------------------------------------------------------------------------------------------------------------- | -------------------
+Week | Topic                 | Description                                                                                                               | Homework
+---- | --------------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------
    0 | [Starting Line][0]    | The resources you need for development. Come here if any of the files from your Week 1 USB drive get lost.                | None
    1 | [Hello World][1]      | Introduce the class. Establish channels of communication and coordination. Learn the basics of JavaScript development.    | JavaScript Questions
    2 | [Going Native][2]     | Take React Native to your iOS or Android device using Expo. Explore React Native's basic components.                      | MathApp Screens
-   3 | [Component Design][3] | Understand the benefits of React Native's component design. Build a test application using component design.              | ???
-   4 | JS + React         | Find out where advanced JavaScript concepts fit into React Native's design.                                               | ???
-   5 | Planet of the APIs | Communicate with real-world APIs using web protocols. Discover which APIs best fit your interests.                        | ???
-   6 | Projects           | Develop a plan for your project. Form teams if desired. Create a Trello board outlining important project steps.          | ???
-   7 | ERROR Help         | Parse errors to find and fix problems. Search forums. Develop a troubleshooting strategy.                                 | ???
-   8 | Code Review        | Work on your project in-class. Mandatory code reviews will be scheduled throughout the class.                             | ???
-   9 | Deployment         | Prepare your code for deployment. Load it on your own device. Learn to submit apps to the App Store and Play Store.       | ???
-  10 | Presentations      | Present what you've made. Every team will have 15 minutes to present with a slide show and demonstration.                 | ???
+   3 | [Component Design][3] | Understand the benefits of React Native's component design. Build a test application using component design.              | Create BirthdayApp
+   4 | JS + React            | Find out where advanced JavaScript concepts fit into React Native's design.                                               | ???
+   5 | Planet of the APIs    | Communicate with real-world APIs using web protocols. Discover which APIs best fit your interests.                        | ???
+   6 | Projects              | Develop a plan for your project. Form teams if desired. Create a Trello board outlining important project steps.          | ???
+   7 | ERROR Help            | Parse errors to find and fix problems. Search forums. Develop a troubleshooting strategy.                                 | ???
+   8 | Code Review           | Work on your project in-class. Mandatory code reviews will be scheduled throughout the class.                             | ???
+   9 | Deployment            | Prepare your code for deployment. Load it on your own device. Learn to submit apps to the App Store and Play Store.       | ???
+  10 | Presentations         | Present what you've made. Every team will have 15 minutes to present with a slide show and demonstration.                 | ???
 
  > We reserve the right to move topics at any time for any reason.
 
