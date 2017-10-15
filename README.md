@@ -32,8 +32,8 @@ Week | Topic                      | Description                                 
    2 | [Going Native][2]          | Take React Native to your iOS or Android device using Expo. Explore React Native's basic components.                   | MathApp Screens
    3 | [Component Design][3]      | Understand the benefits of React Native's component design. Build a test application using component design.           | Create BirthdayApp
    4 | [APIs + Advanced JS][4]    | Find out where advanced JavaScript concepts and API calls fit into React Native's design.                              | Investigate Emotion API
-   5 | [Trello + API Research][5] | Develop a plan for your project using Trello. Find relevant components and APIs. Map out the screens of your app.      | ???
-   6 | Projects                   | Create your project. Add placeholders for all desired screens. Convert your physical map into code.                    | ???
+   5 | [Trello + API Research][5] | Develop a plan for your project using Trello. Find relevant components and APIs. Map out the screens of your app.      | Work on Project
+   6 | [Projects][6]              | Create your project. Add placeholders for all desired screens. Convert your physical map into code.                    | Work on Project
    7 | ERROR Help                 | Parse errors to find and fix problems. Search forums. Develop a troubleshooting strategy.                              | ???
    8 | Code Review                | Work on your project in-class. Mandatory code reviews will be scheduled throughout the class.                          | ???
    9 | Deployment                 | Prepare your code for deployment. Load it on your own device. Learn to submit apps to the App Store and Play Store.    | ???
