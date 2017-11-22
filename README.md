@@ -3,23 +3,27 @@ JavaScript and React Native Bootcamp :rocket:
 
  > Jumping into the deep end with iOS/Android development.
 
-Welcome to `P060A`, JavaScript and React Native Bootcamp! By the end of this 8
-week camp, you will be able to build your own iOS/Android application using the
-same technology that Facebook is using to develop their own applications. Not
-only will we provide you with the knowledge necessary for app development, but
-also some best practices that will ensure that your code is beautiful and
-reusable. Our goal as instructors is to introduce you to the world of
-development in a manner that will foster your growth as potential software
-developers.
+Welcome to `P060A`, Ardent Academy's JavaScript & React Native Boot Camp! By the
+end of this ten week camp, you will be able to build your own iOS/Android
+application using the same technology that Facebook is using to develop their
+own applications. Not only will we provide you with the knowledge necessary for
+app development, but also some best practices that will ensure that your code is
+beautiful and reusable. As the instructor, my goal is to introduce you to the
+world of development in a manner that will foster your growth as potential
+software engineers.
 
 This will be a rigorous course; learning the course material takes far more time
-than we have in class. You will be expected to spend *at least* 10 hours a week
-coding, looking through documentation, and researching new features outside of
-class. Make sure to communicate with me and Sam over Slack to work out any
-problems!
+than we have in class. To get the most out of the course, you should plan to
+spend *at least* two hours a week coding, looking through documentation, and
+researching new features for your apps outside of class - **five hours a week is
+optimal**. If you ever feel unsure about what you should be working on or how to
+solve a problem, message me or Sam on Slack!
 
-Every week will contain links to resources to aid you in the development of your
-application as well as instructions for the weekly projects we have in store.
+ > Note: We will connect students to our Slack team on the first day of class.
+
+Each week's lecture notes will contain links to resources to aid you in the
+development of your application as well as instructions for the weekly projects
+we have in store.
 
 Now let's make something awesome :tada:
 
@@ -34,7 +38,7 @@ Week | Topic                      | Description                                 
    4 | [APIs + Advanced JS][4]    | Find out where advanced JavaScript concepts and API calls fit into React Native's design.                              | Investigate Emotion API
    5 | [Trello + API Research][5] | Develop a plan for your project using Trello. Find relevant components and APIs. Map out the screens of your app.      | Work on Project
    6 | [Projects][6]              | Create your project. Add placeholders for all desired screens. Convert your physical map into code.                    | Work on Project
-   7 | ERROR Help                 | Parse errors to find and fix problems. Search forums. Develop a troubleshooting strategy.                              | ???
+   7 | Error Help                 | Parse errors to find and fix problems. Search forums. Develop a troubleshooting strategy.                              | ???
    8 | Code Review                | Work on your project in-class. Mandatory code reviews will be scheduled throughout the class.                          | ???
    9 | Deployment                 | Prepare your code for deployment. Load it on your own device. Learn to submit apps to the App Store and Play Store.    | ???
   10 | Presentations              | Present what you've made. Every team will have 15 minutes to present with a slide show and demonstration.              | ???
@@ -43,9 +47,9 @@ Week | Topic                      | Description                                 
 
  > **Disclaimer**: *Only Macs can natively develop for iOS.* This means that you
  > **absolutey need a Mac** to submit your work to the app store, and a Mac is
- > also **required** to use a device's hardware features (think camera, storage,
- > or motion data). This may sound very limiting, but *a great deal of apps can
- > be designed without these functions.*
+ > also **required** to use a device's hardware features (think storage, motion
+ > data, etc). This may sound very limiting, but *a great deal of apps can be
+ > designed without these functions.*
 
 [0]: https://github.com/ArdentLabs/bootcamp-fall-2017/tree/master/week0
 [1]: https://github.com/ArdentLabs/bootcamp-fall-2017/tree/master/week1
